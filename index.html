@@ -53,20 +53,33 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    .download-button {
+    .store-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .store-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 16px;
       background-color: var(--accent-color);
       color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1em;
-      cursor: pointer;
+      font-weight: bold;
       text-decoration: none;
+      border-radius: 8px;
       transition: background 0.3s;
     }
 
-    .download-button:hover {
+    .store-button:hover {
       background-color: #009ba0;
+    }
+
+    .store-button img {
+      height: 24px;
+      margin-right: 10px;
     }
 
     footer {
@@ -89,9 +102,16 @@
     <img src="screenshot2.png" alt="Uygulama Görseli 2" />
   </div>
 
-  <a class="download-button" href="https://apps.apple.com/app/idXXXXXXXXXX" target="_blank">
-    App Store'dan İndir
-  </a>
+  <div class="store-buttons">
+    <a class="store-button" href="https://apps.apple.com/app/idXXXXXXXXXX" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/mac-os.png" alt="App Store" />
+      App Store
+    </a>
+    <a class="store-button" href="https://play.google.com/store/apps/details?id=XXXXXXXXXX" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/google-play.png" alt="Google Play" />
+      Google Play
+    </a>
+  </div>
 
   <footer>
     &copy; 2025 Rüya Defteri. Tüm hakları saklıdır.
